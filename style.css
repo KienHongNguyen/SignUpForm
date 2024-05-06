@@ -1,0 +1,27 @@
+body {
+    width: 2000px;
+    height: 1500px;
+    margin: 0;
+    border: solid red;
+    display: flex;
+}
+
+/* leftSection Container */
+.leftSection {
+    display: flex;
+}
+/* leftSection Image */
+#LeafImg {
+    width: 700px;
+    height: 1500px;
+    object-fit: cover;
+}
+
+
+/* rightSection Container */
+.rightSection {
+    display: flex;
+    
+    border: solid red;
+}
+
