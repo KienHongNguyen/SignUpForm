@@ -337,7 +337,7 @@ body {
     font-size: 1rem;
     margin-bottom: 0.2rem;
     margin-left: 18vw;
-    width: 30vw;
+    width: 60vw;
     font-weight: 100;
 }
 .inputSection input {
@@ -347,15 +347,13 @@ body {
     margin-left: 18vw;
     padding-left: .5rem;
     border-radius: 0.5rem;
-    border: solid red;
-}
-.inputSection input:invalid {
-    border: 0.3rem solid red;
 }
 .inputSection input:focus {
     border: 0.3rem solid #81ABC5;
 }
-
+.inputSection input:invalid {
+    border: 0.3rem solid red;
+}
 
 
 
@@ -388,6 +386,7 @@ body {
     margin-left: 18vw;
     margin-top: 2rem;
     text-wrap: balance;
+    line-height: 2.5vh;
 }
 .bottomRight a {
     font-weight: 600;
