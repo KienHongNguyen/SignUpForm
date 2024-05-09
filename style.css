@@ -1,3 +1,4 @@
+/* Body */
 body {
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
@@ -7,22 +8,19 @@ body {
     margin: 0;  
 }
 
+
 /* leftSection Container */
 .leftSection {
     position: relative;
     width: 40vw;
     height: 100vh;
-
-    
 }
-/* leftSection Image */
 .leftSection img {
     width: 100%;
     height: 100%;
     object-fit: cover
 
 }
-/* leftSection Overlay */
 .overlay {
     position: absolute;
     top: 0;
@@ -34,16 +32,17 @@ body {
     display: flex;
     align-items: center; /* Vertical centering */
     justify-content: center; /* Horizontal centering */
+    flex-direction: column;
 }
 
+
+/* Content Container */
 .content {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
 }
-
-/* Content styling */
 .content img {
     display: flex;
     width: auto;
@@ -54,6 +53,28 @@ body {
     color: white;
 }
 
+
+/* Credit Container */
+.credit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 96vh;
+    width: 100%;
+    height: 0%;
+    display: flex;
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+}
+.credit p {
+    color: white;
+    font-size: 1.8rem;
+}
+.credit a {
+    color: white;
+}
+
+
 /* rightSection Container */
 .rightSection {
     display: flex;
@@ -62,6 +83,7 @@ body {
     width: 60vw;
     height: 100vh;
 }
+
 
 /* topRight Container */
 .topRight {
@@ -72,7 +94,6 @@ body {
     height: 35vh;
     background-color: hsl(0, 0%, 95%);
 }
-
 .topRight h1 {
     font-size: 2rem;
     margin-left: 3rem;
@@ -92,22 +113,19 @@ body {
     width: 60vw;
     height: 35vh;
 }
-
-
-
-/* middleRight Main Text */
 .middleRight h1 {
     display: flex;
     align-items: center;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     width: auto;
-    height: 3vh;
+    height: 2vh;
     margin-top: 2rem;
     margin-bottom: 0;
     padding-top: 1rem;
     padding-left: 3rem;
     padding-bottom: 1rem;
 }
+
 
 /* inputSection Container */
 .inputSection {
@@ -118,7 +136,6 @@ body {
     width: 100%;
     height: 100%;
 }
-/* inputSection h2 */
 .inputSection h2 {
     font-size: 1.5rem;
     margin-bottom: 0.2rem;
@@ -126,7 +143,6 @@ body {
     width: 15vw;
     font-weight: 600;
 }
-/* inputSection input */
 .inputSection input {
     width: 20vw;
     height: 3.5vh;
@@ -135,7 +151,12 @@ body {
     padding-left: .5rem;
     border-radius: 0.5rem;
 }
-
+.inputSection input:invalid {
+    outline: 5px solid red;
+}
+.inputSection input:focus {
+    outline: 5px solid #81ABC5;
+}
 
 
 /* bottomRight container */
@@ -146,152 +167,50 @@ body {
     height: 30vh;
     background-color: hsl(0, 0%, 95%);
 }
-
 .bottomRight button {
     width: 20vw;
     height: 8vh;
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: 600;
     margin-left: 3rem;
     margin-top: 2rem;
     border-radius: 1rem;
-    background-color: blue;
+    background-color: #81ABC5;
     color: white;
 }
-
 .bottomRight p {
     font-size: 2rem;
-
     margin-left: 3rem;
     margin-top: 2rem;
 }
-
 .bottomRight a {
     font-weight: 600;
     text-decoration: none;
-    color: blue;
+    color: #81ABC5;
 }
-
-
-
 
 
 
 
 /* For Mobile */
 @media (max-width: 600px) {
-    body{
-        color: white;
-    }
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
-/* BACKUP */
-
-/* leftSection Container */
-/* .leftSection {
-    width: 100%;
-
-    border: solid red;
-}
-/* leftSection Image */
-/* #LeafImg {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-} */
-
-
-/* rightSection Container */
-/* .rightSection {
+/* leftSection container */
+.leftSection {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: grey;
-
-    width: 100%;
-    
-    border: solid red;
-} */
-
-/* topRight Container */
-/* .topRight {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding-left: 2vw;
-
-    border: solid red;
-} */
-/* topRight Text */
-/* .topRight h1 {
-    font-size: 2rem;
-} */
-
-
-/* Middle Right Container */
-/* .middleRight {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
+    width: 100vw;
     height: 40vh;
-    padding-left: 2vw;
-    
-    border: solid red;
-} */
+}
 
-/* Middle Right Main Text */
-/* .middleRight h1 {
-    font-size: 2.4rem;
-    margin-bottom: 1rem;
-} */
-
-/* Input Section Container */
-/* .inputSection {
-    display: grid;
-    grid-template-columns: repeat(2, 20rem);
-    grid-template-rows: repeat(3,110px);
-    margin-top: none;
-    margin-left: 50px;
-} */
-/* Input Section Text */
-/* .inputSection h2 {
-    font-size: 20px;
-    margin-bottom: 5px;
-    font-weight: 600;
-    color: hsl(0, 0%, 20%);
-} */
-
-/* .inputSection input {
-    height: 35%;
-    width: 80%;
-    font-size: 24px;
-    padding-left: 5px;
-    border-radius: 5px;
-} */
-
-
-/* bottomRight Container */
-/* .bottomRight {
+.rightSection {
     display: flex;
     flex-direction: column;
-    width: 100%;
 
-    border: solid blue;
-} */
-/* .bottomRight button{
-    background-color: #596D48;
-    margin-left: 50px;
-    margin-top: 50px;
-    width: 30%;
-    height: 50%;
-    border-radius: 10px;
-    font-size: 28px;
-    font-weight: 600;
-    color: white;
-    border: none;
-} */
-/* 
-.bottomRight p {
-    margin-top: 50px;
-    font-size: 20px;
-} */
+}
+
+}
