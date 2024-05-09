@@ -32,32 +32,98 @@ body {
 
     width: 60vw;
     height: 100vh;
+    
 
-    border: solid red;
 }
 
 /* topRight Container */
 .topRight {
     display: flex;
+    flex-direction: column;
+    align-items:flex-start;
     width: 60vw;
-    height: 20vh;
+    height: 35vh;
+    
 
     border: solid yellow;
 }
+
+.topRight h1 {
+    font-size: 2rem;
+    margin-left: 3rem;
+    border: solid red;
+    margin-top: auto;
+}
+.topRight h2 {
+    font-size: 2rem;
+    margin-left: 3rem;
+    border: solid red;
+}
+
 
 /* middleRight Container */
 .middleRight {
     display: flex;
     flex-direction: column;
     width: 60vw;
-    height: 30vh;
+    height: 35vh;
 
     border: solid blue;
+
 }
+
+
+
+/* middleRight Main Text */
+.middleRight h1 {
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    width: auto;
+    height: 3vh;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 1rem;
+    padding-left: 3rem;
+    padding-bottom: 1rem;
+ 
+
+    border: solid red;
+}
+
+/* inputSection Container */
 .inputSection {
     display: grid;
-    grid-template-columns: repeat(3, 20rem);
-    grid-template-rows: repeat(2, 5rem);
+    align-items: center;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: repeat(3, 30%);
+    width: 100%;
+    height: 100%;
+
+
+    border: solid red;
+
+}
+/* inputSection h2 */
+.inputSection h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+    margin-left: 3rem;
+    width: 15vw;
+    font-weight: 600;
+    
+    border: solid red;
+
+}
+/* inputSection input */
+.inputSection input {
+    width: 20vw;
+    height: 3vh;
+    font-size: 2rem;
+    margin-left: 3rem;
+    padding-left: .5rem;
+    border-radius: 0.5rem;
+    border: solid red;
 }
 
 
@@ -65,10 +131,32 @@ body {
 /* bottomRight container */
 .bottomRight {
     display: flex;
+    flex-direction: column;
     width: 60vw;
-    height: 20vh;
+    height: 30vh;
 
     border: solid green;
+}
+
+.bottomRight button {
+    width: 20vw;
+    height: 5vh;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    
+
+    background-color: blue;
+    color: white;
+}
+
+.bottomRight p {
+    font-size: 2rem;
+
+    margin-left: 3rem;
+    margin-top: 2rem;
 }
 
 
