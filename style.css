@@ -4,36 +4,63 @@ body {
 
     width: 100vw;
     height: 100vh;
-    margin: 0;
-
-    border: solid #ff0000;    
+    margin: 0;  
 }
 
 /* leftSection Container */
 .leftSection {
+    position: relative;
     width: 40vw;
     height: 100vh;
 
-    border: solid red;
+    
 }
 /* leftSection Image */
 .leftSection img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover
+
+}
+/* leftSection Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 25vh;
+    width: 100%;
+    height: 15%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    display: flex;
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
 }
 
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Content styling */
+.content img {
+    display: flex;
+    width: auto;
+    height: 12vh;
+}
+.content h1 {
+    font-size: 6rem;
+    color: white;
+}
 
 /* rightSection Container */
 .rightSection {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     width: 60vw;
     height: 100vh;
-    
-
 }
 
 /* topRight Container */
@@ -43,21 +70,18 @@ body {
     align-items:flex-start;
     width: 60vw;
     height: 35vh;
-    
-
-    border: solid yellow;
+    background-color: hsl(0, 0%, 95%);
 }
 
 .topRight h1 {
     font-size: 2rem;
     margin-left: 3rem;
-    border: solid red;
     margin-top: auto;
 }
 .topRight h2 {
     font-size: 2rem;
     margin-left: 3rem;
-    border: solid red;
+    margin-bottom: 3rem;
 }
 
 
@@ -67,9 +91,6 @@ body {
     flex-direction: column;
     width: 60vw;
     height: 35vh;
-
-    border: solid blue;
-
 }
 
 
@@ -81,14 +102,11 @@ body {
     font-size: 2.5rem;
     width: auto;
     height: 3vh;
-    margin-top: 0;
+    margin-top: 2rem;
     margin-bottom: 0;
     padding-top: 1rem;
     padding-left: 3rem;
     padding-bottom: 1rem;
- 
-
-    border: solid red;
 }
 
 /* inputSection Container */
@@ -99,10 +117,6 @@ body {
     grid-template-rows: repeat(3, 30%);
     width: 100%;
     height: 100%;
-
-
-    border: solid red;
-
 }
 /* inputSection h2 */
 .inputSection h2 {
@@ -111,19 +125,15 @@ body {
     margin-left: 3rem;
     width: 15vw;
     font-weight: 600;
-    
-    border: solid red;
-
 }
 /* inputSection input */
 .inputSection input {
     width: 20vw;
-    height: 3vh;
+    height: 3.5vh;
     font-size: 2rem;
     margin-left: 3rem;
     padding-left: .5rem;
     border-radius: 0.5rem;
-    border: solid red;
 }
 
 
@@ -134,20 +144,17 @@ body {
     flex-direction: column;
     width: 60vw;
     height: 30vh;
-
-    border: solid green;
+    background-color: hsl(0, 0%, 95%);
 }
 
 .bottomRight button {
     width: 20vw;
-    height: 5vh;
+    height: 8vh;
     font-size: 2rem;
     font-weight: 600;
     margin-left: 3rem;
     margin-top: 2rem;
     border-radius: 1rem;
-    
-
     background-color: blue;
     color: white;
 }
@@ -157,6 +164,12 @@ body {
 
     margin-left: 3rem;
     margin-top: 2rem;
+}
+
+.bottomRight a {
+    font-weight: 600;
+    text-decoration: none;
+    color: blue;
 }
 
 
